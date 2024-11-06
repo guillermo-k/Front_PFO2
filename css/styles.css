@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Itim", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2rem;
+    background-image: url("../resurces/img/photo-1515879218367-8466d910aaa4.jpg");
+}
+
+header{
+    background-color: beige;
+    /* margin-top: 3rem; */
+    height: 15rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+h1{
+    font-size: 10vh;
+    text-align: center;
+    color: green;
+}
+
+marquee{
+    text-decoration-line:underline;
+}
+
+nav{
+    position: sticky;
+    text-align: center;
+    top:0;
+}
+
+nav ul li{
+    list-style-type:none;
+    display: inline;
+
+}
+
+button{
+    /* height: 40px; */
+    background-color: black;
+    color: orange;
+    font-size: 2rem;
+    border-radius: 2rem;
+    min-width: 8rem;
+    border: solid, 1px, orange;
+    padding: .8rem;
+    margin-block: .8rem;
+}
+
+button:hover{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+#Nav2 button{
+    min-width: 0;
+    padding: 0.5%;
+    height: auto;
+}
+
+#Nav2{
+    height: 0;
+    visibility: hidden;
+}
+
+
+main{
+    display: flex;
+    flex-direction:row ;
+    gap: 2rem;
+}
+
+main :nth-child(){
+    padding: 2rem;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    gap: 2rem;
+    padding-left: 4rem;
+}
+
+
+section{
+    border:1px solid;
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: 2rem;
+}
+
+
+h3{
+    text-decoration-line:underline;
+    font-size: 3vh;
+    color: green;
+}
+
+#datosPersonales{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 300px;
+}
+    
+table{
+    width: 40rem;
+    border-collapse: collapse;
+    border: 5px solid;
+    border-color: black;
+}
+
+th  {
+    background-color: bisque;
+    border: 3px solid;
+}
+
+td{
+    border: 1px solid;
+}
+
+tr > :nth-child(n){
+    padding-inline: 20px;
+    padding-block: 10px;    
+}
+
+tbody > :nth-child(odd){
+    background-color: rgb(227, 222, 249);
+}
+
+tbody > :nth-child(even){
+    background-color: rgb(195, 188, 227);
+}
+
+
+        
+article{
+    padding: 40px;
+    display: inline-block;
+}
+
+#form{
+    background-color: rgb(145, 197, 145);
+    padding: 40px;
+    text-align: center;
+}
+
+input{
+    font-size: 1.5rem;
+}
+
+form >:nth-child(n){
+    margin: 10px;
+}
+
+aside{
+    padding: 40px;
+    background-color: lightblue;
+    max-width: 30%;
+    display: inline-block;
+}
+
+footer{
+    background: linear-gradient(orange,black,black,black,orange);
+    height: 200px;
+    color: orange;
+    align-content: center;
+    text-align: end;
+    margin-top: 30px;
+    padding: 30px;
+}
+.python{
+    cursor: url("../resurces/img/python.png"), default;
+    
+}
+.flask{
+    cursor: url("../resurces/img/flask.png"), auto;
+}
+.django{
+    cursor: url("../resurces/img/django.png"), auto;
+}
+.C_plus_plus{
+    cursor: url("../resurces/img/c-.png"), auto;
+}
+.C_sharp{
+    cursor: url("../resurces/img/c-sharp.png"), auto;
+}
+.js{
+    cursor: url("../resurces/img/js.png"), auto;
+}
+._html{
+    cursor: url("../resurces/img/html-5.png"), auto;
+}
+._css{
+    cursor: url("../resurces/img/css-3.png"), auto;
+}
+.bootstrap{
+    cursor: url("../resurces/img/bootstrap.png"), auto;
+}
+.kotlin{
+    cursor: url("../resurces/img/kotlin.jpg"), auto;
+}
+.sql{
+    cursor: url("../resurces/img/sql-server.png"), auto;
+}
+
+
+
+
+@media (max-width: 600px)  {
+    #Nav2 {
+        visibility: visible;
+        height: 2rem;
+    }
+    #Nav1 {
+        height: 0;
+        visibility: hidden;
+    }
+}

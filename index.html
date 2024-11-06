@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- head es el sector del archivo HTML que no vera el usuario,
+    en el se encuentra la información necesaria para que el navegador interprete de manera correcta nuestro codigo.
+    Aquí habra información como el paquete de caracteres utilizado, el idioma en el que esta escrita la página, las referencias a archivos externos,
+    sean de estilo o scripts, y tambien estará el único elemento dentro del head que si podra ver el usuario que es el título -->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- <link rel="stylesheet" href="../PracticaFormativa1/css/styles.css"> -->
+        <link rel="shortcut icon" href="resurces\img\Guillermo.ico" type="image/x-icon">
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"> -->
+        <script src="https://kit.fontawesome.com/4b847688aa.js" crossorigin="anonymous"></script>
+        <title>PF2</title>
+    </head>
+
+    <!-- El body "Cuerpo" de la página contiene todo los elementos que seran mostrados al usuario -->
+    <body id="inicio">
+        <!-- El header es el encabezado. En el se suelen colocar datos del propietario de la pagina, como nombre de la empresa o marca y el logo  -->
+        <header>
+            <h1>
+            <marquee behavior="alternate" scrollamount = "10">
+                Practica formativa 2
+            </marquee>
+            </h1>
+        </header>
+        <nav id="Nav1">
+            <ul>
+                <li><a href="#inicio"><button>Inicio</button></a></li>
+                <li><a href="#datosPersonales"><button>Datos personales</button></a></li>
+                <li><a href="#tecnologias"><button>Tecnologías conocidas</button></a></li>
+                <li><a href="#sobreMi"><button>Sobre mí</button></a></li>
+                <li><a href="#form"><button>Ingrese sus datos</button></a></li>
+            </ul>
+
+        </nav>
+        <nav id="Nav2">
+            <ul>
+            <li><a href="#inicio"><button><i class="fa-solid fa-house" title="Inicio"></i></button></a></li>
+            <li><a href="#datosPersonales"><button><i class="fa-solid fa-person-circle-plus" title="Datos personales" ></i></button></a></li>
+            <li><a href="#tecnologias"><button><i class="fa-solid fa-laptop" title="Tecnologías conocida"></i></button></a></li>
+            <li><a href="#sobreMi"><button><i class="fa-solid fa-person-circle-question" title="Sobre mí"></i></button></a></li>
+            <li><a href="#form"><button><i class="fa-solid fa-file-signature" title="Ingrese sus datos"></i></button></a></li>
+        </ul>
+        </nav>
+        <main>
+            <div>            
+                <section id="datosPersonales">
+                    <article>
+                        <h3>Datos personales</h3>
+                        <ul>
+                            <li>Nombres: Guillermo Ernesto.</li>
+                            <li>Apellido: Köster</li>
+                            <li>E-Mail: <a href="mailto:">guillermo.fullstack@gmail.com</a></li>
+                            <li>Carrera: Tecnicatura superior en desarrollo de software</li>
+                            <li>Institución: <a href="https://ifts29.com.ar/" target="_blank">IFTS N°29</a></li>
+                            <li>Año: 2</li>
+                            <li>Cuatrimestre: 2</li>
+                            <li>Comisión: B</li>
+                            <li>Materia: Desarrollo de Sistemas Web (Front End)</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <img src="resurces/img/Guillermo.jpg" alt="Guillermo Köster" srcset="">
+                    </article>
+                </section>
+                <section id="tecnologias">
+                    <article>
+                        <h3>Tecnologías conocidas</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Lenguaje</th>
+                                    <th>Framework</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+            
+                                    <td><a href="https://www.python.org/" target="_blank" class="python">Python</a></td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="https://flask.palletsprojects.com/" target="_blank" class="flask">Flask</a></li>
+                                                <li><a href="https://www.djangoproject.com/" target="_blank" class="django">Django</a></li>
+                                            </ul>
+                                        </td>
+            
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://learn.microsoft.com/es-es/cpp/cpp/welcome-back-to-cpp-modern-cpp?view=msvc-170" target="_blank" class="C_plus_plus">C++</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://dotnet.microsoft.com/es-es/languages/csharp" target="_blank" class="C_sharp">C#</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" class="js">JavaScript</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.w3schools.com/html/" target="_blank" class="_html">HTML</a></td>
+                                        <td></td>
+                                </tr>
+            
+                                <tr>
+                                    <td><a href="https://www.w3schools.com/css/" target="_blank" class="_css">CSS</a></td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="https://getbootstrap.com/" target="_blank" class="bootstrap">Bootstrap</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td><a href="https://kotlinlang.org/" target="_blank" class="kotlin">Kotlin</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.w3schools.com/Sql/" target="_blank" class="sql">SQL</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            
+                <section id="form">
+                    <h3>Complete sus datos</h3>
+                        <form action="">
+                            <label for="txtNombre">Nombre:</label>
+                            <input type="text" name="Nombre" id="txtNombre" placeholder="Ingrese su nombre">
+                            <br>
+                            <label for="txtApellido">Apellido:</label>
+                            <input type="text" name="Apellido" id="txtApellido" placeholder="Ingrese su apellido">
+                            <br>
+                            <label for="txtMail">E-Mail:</label>
+                            <input type="email" name="mail" id="txtMail" placeholder="Ingrese su correo electrónico">
+                            <br>
+                            <label for="txtTelefono">Telefono:</label>
+                            <input type="tel" name="telefono" id="txtTelefono" placeholder="Ingrese su telefono">
+                            <br>
+                            <input type="submit" value="Enviar datos">
+                        </form>
+                </section>
+        </div>
+
+            <aside id="sobreMi">
+                <h3>Sobre mi</h3>
+                <p>Nací en febrero de 1985, por lo que tengo 39 años. <br> 
+
+                    En 2002 me recibí de técnico electromecánico en la <b>EET N°3 de Berazategui</b>. Durante la carrera tuve mis primeros roces con la programación, 
+                     en temas muy diferentes a los que vemos en esta carrera, pero sin dejar de ser escritura de código, 
+                     los ámbitos en los que tocamos programación fueron, en primer lugar, 
+                     escritura en Gcode, lenguaje utilizado en tornos y fresadoras CNC (control numérico computarizado), y segundo, 
+                     en programación de PLCs (Controladores lógicos programables) en lenguaje de lista de instrucciones (IL o AWL) y en Ladder. <br> 
+                    Estos primeros contactos sembraron en mí, el gusto por la escritura de código. Lamentablemente, un tiempo después, 
+                     me deje influenciar por alguien que me dijo <i>"No, no te metas en programación, es muy difícil"</i>, ese comentario logro que le tomara "miedo". <br> 
+                    Por suerte, como se imaginarán, ese miedo tuvo un final. Hace unos años, me interese en las placas de desarrollo <i>Arduino</i>, 
+                     y comencé a ver videos tutoriales, los que me llevaron a entender que no es algo difícil, si, requiere dedicación y un aprendizaje continuo, 
+                     pero es muy viable recorrer ese camino. <br> 
+                    Posteriormente, en 2021, tuve la posibilidad de inscribirme y transitar con éxito el curso de <b>Desarrollador web fullstack con Python</b> 
+                     ofrecido por la <b>Agencia de aprendizaje a lo largo de la vida</b>, dentro del programa <b>Codo a codo</b>. <br> 
+                    Lo siguiente, hablando de instrucción formal, es esta carrera de <b>Técnico superior en desarrollo de software</b> que nos encontramos cursando. Sin embargo,  
+                    luego del curso de Codo a codo, nunca deje de aprender de manera autodidacta, sea con tutoriales o practicando saberes aprendidos, 
+                    con lenguajes totalmente nuevos para mí, o los ya tocados con anterioridad.
+                </p>
+            </aside>
+            
+        </main>
+        <footer>Make by: Guillermo koster from Omeguitas &copy;</footer>
+
+    </body>
+</html>
