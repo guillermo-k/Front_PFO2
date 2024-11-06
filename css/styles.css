@@ -11,7 +11,6 @@ body{
 
 header{
     background-color: beige;
-    /* margin-top: 3rem; */
     height: 15rem;
     padding-top: 2rem;
     width: 100%;
@@ -40,7 +39,6 @@ nav ul li{
 }
 
 button{
-    /* height: 40px; */
     background-color: black;
     color: orange;
     font-size: 2rem;
@@ -118,6 +116,7 @@ table{
     border-collapse: collapse;
     border: 5px solid;
     border-color: black;
+    
 }
 
 th  {
@@ -130,8 +129,9 @@ td{
 }
 
 tr > :nth-child(n){
-    padding-inline: 20px;
-    padding-block: 10px;    
+    padding-block: 10px;
+    text-align: center;
+    padding-inline: 3rem;
 }
 
 tbody > :nth-child(odd){
